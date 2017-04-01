@@ -7,3 +7,4 @@ lib/pkgconfig
 lib/pkgconfig/shadowsocks-libev.pc
 lib/libshadowsocks-libev.la
 lib/libshadowsocks-libev.a
+@sample etc/shadowsocks-libev/config.json.sample
