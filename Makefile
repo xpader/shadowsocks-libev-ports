@@ -1,4 +1,4 @@
-# $FreeBSD: head/en_US.UTF-8/books/porters-handbook/book.xml 48496 2017-03-30 01:37:53Z xsan $
+# $FreeBSD$
 
 PORTNAME=	shadowsocks-libev
 PORTVERSION=	3.0.5
