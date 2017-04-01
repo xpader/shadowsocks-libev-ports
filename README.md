@@ -1,7 +1,7 @@
 # shadowsocks-libev-ports
 New Shadowsocks-Libev version for FreeBSD Ports.
 
-The shadowsocks-libev in FreeBSD Ports and PKG's version is ver old, so this is the new version of freebsd ports.
+The shadowsocks-libev in FreeBSD Ports and PKG's version is very old, so this is the new version of freebsd ports.
 
 ##How to use
 
