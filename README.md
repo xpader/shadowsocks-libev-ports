@@ -5,5 +5,5 @@ The shadowsocks-libev in FreeBSD Ports and PKG's version is ver old, so this is 
 
 ##How to use
 
-1.First, you have ports in your freebsd, check /usr/ports
-2.Go into shadowsocks-ibev-ports directory, and 'make install'
+1. First, you have ports in your freebsd, check /usr/ports
+2. Go into shadowsocks-ibev-ports directory, and do `make install`
