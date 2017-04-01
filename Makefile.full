@@ -1,0 +1,46 @@
+# $FreeBSD$
+
+PORTNAME=	shadowsocks-libev
+PORTVERSION=	3.0.5
+# DISTVERSIONPREFIX=v
+MASTER_SITES=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v${PORTVERSION}/
+
+CATEGORIES=	net
+MAINTAINER= yp2008cn@gmail.com
+COMMENT=    Lightweight tunnel proxy which can help you get through firewalls
+
+LICENSE=	GPLv3
+
+# USE_GITHUB=	no
+# GH_ACCOUNT=	shadowsocks
+# GH_PROJECT=	shadowsocks-libev
+
+BUILD_DEPENDS=	automake:devel/automake \
+    autoconf:devel/autoconf \
+    libtool:devel/libtool
+
+LIB_DEPENDS= libudns.so:${PORTSDIR}/dns/udns \
+	libev.so:devel/libev \
+	libsodium.so:security/libsodium \
+	libmbedcrypto.so:security/mbedtls \
+	libpcre.so:devel/pcre
+
+USE_RC_SUBR=	shadowsocks_libev
+
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--disable-documentation
+
+# build options
+OPTIONS_DEFINE+=DOCS
+
+DOCS_DESC=	Build Documentation
+
+.include <bsd.port.pre.mk>
+
+.if ${PORT_OPTIONS:DOCS}
+LIB_DEPENDS+=	:textproc/asciidoc \
+	:textproc/xmlto
+.else
+CONFIGURE_ARGS+=--disable-documentation
+.endif
+.include <bsd.port.post.mk>
