@@ -18,7 +18,7 @@ LIB_DEPENDS= libudns.so:dns/udns \
 
 USE_RC_SUBR=	shadowsocks_libev
 
-GNU_CONFIGURE=	yes
+HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-documentation
 
 post-install:
