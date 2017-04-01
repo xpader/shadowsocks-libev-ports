@@ -3,7 +3,6 @@ bin/ss-manager
 bin/ss-local
 bin/ss-tunnel
 include/shadowsocks.h
-lib/pkgconfig
 lib/pkgconfig/shadowsocks-libev.pc
 lib/libshadowsocks-libev.la
 lib/libshadowsocks-libev.a
