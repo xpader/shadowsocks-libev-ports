@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	shadowsocks-libev
-PORTVERSION=	3.0.6
+PORTVERSION=	3.0.7
 MASTER_SITES=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v${PORTVERSION}/
 
 CATEGORIES=	net
