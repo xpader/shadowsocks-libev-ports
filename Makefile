@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	shadowsocks-libev
-PORTVERSION=	3.0.8
+PORTVERSION=	3.1.0
 MASTER_SITES=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v${PORTVERSION}/
 
 CATEGORIES=	net
@@ -10,8 +10,8 @@ COMMENT=    Lightweight tunnel proxy which can help you get through firewalls
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS= libudns.so:dns/udns \
-	libev.so:devel/libev \
+LIB_DEPENDS= libev.so:devel/libev \
+	libcares.so:dns/c-ares \
 	libsodium.so:security/libsodium \
 	libmbedcrypto.so:security/mbedtls \
 	libpcre.so:devel/pcre
